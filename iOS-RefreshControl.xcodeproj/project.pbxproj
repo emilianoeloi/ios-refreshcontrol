@@ -15,6 +15,7 @@
 		AC10BADE1B7BFF8700C4A248 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC10BADD1B7BFF8700C4A248 /* Images.xcassets */; };
 		AC10BAE11B7BFF8700C4A248 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC10BADF1B7BFF8700C4A248 /* LaunchScreen.xib */; };
 		AC10BAED1B7BFF8700C4A248 /* iOS_RefreshControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC10BAEC1B7BFF8700C4A248 /* iOS_RefreshControlTests.m */; };
+		F76706EF09F38A2B6A8F9D78 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0B16928EDFD45D3BD79DE5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84E651BBA0264C5651090FC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AC10BACA1B7BFF8700C4A248 /* iOS-RefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-RefreshControl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC10BACE1B7BFF8700C4A248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC10BACF1B7BFF8700C4A248 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		AC10BAE61B7BFF8700C4A248 /* iOS-RefreshControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-RefreshControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC10BAEB1B7BFF8700C4A248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC10BAEC1B7BFF8700C4A248 /* iOS_RefreshControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_RefreshControlTests.m; sourceTree = "<group>"; };
+		E066F3A343811B9B90D4170A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FD0B16928EDFD45D3BD79DE5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76706EF09F38A2B6A8F9D78 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +67,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80591440C8FB5ADFAC238BB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD0B16928EDFD45D3BD79DE5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC10BAC11B7BFF8700C4A248 = {
 			isa = PBXGroup;
 			children = (
 				AC10BACC1B7BFF8700C4A248 /* iOS-RefreshControl */,
 				AC10BAE91B7BFF8700C4A248 /* iOS-RefreshControlTests */,
 				AC10BACB1B7BFF8700C4A248 /* Products */,
+				AD2BECD58F2B0047345AA121 /* Pods */,
+				80591440C8FB5ADFAC238BB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +137,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AD2BECD58F2B0047345AA121 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E066F3A343811B9B90D4170A /* Pods.debug.xcconfig */,
+				84E651BBA0264C5651090FC2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC10BAF01B7BFF8700C4A248 /* Build configuration list for PBXNativeTarget "iOS-RefreshControl" */;
 			buildPhases = (
+				8F4589F057560B427514F57A /* Check Pods Manifest.lock */,
 				AC10BAC61B7BFF8700C4A248 /* Sources */,
 				AC10BAC71B7BFF8700C4A248 /* Frameworks */,
 				AC10BAC81B7BFF8700C4A248 /* Resources */,
+				BFA8924C2FA6ED14AF8AF79D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +242,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F4589F057560B427514F57A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BFA8924C2FA6ED14AF8AF79D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC10BAC61B7BFF8700C4A248 /* Sources */ = {
@@ -349,6 +408,7 @@
 		};
 		AC10BAF11B7BFF8700C4A248 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E066F3A343811B9B90D4170A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS-RefreshControl/Info.plist";
@@ -360,6 +420,7 @@
 		};
 		AC10BAF21B7BFF8700C4A248 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E651BBA0264C5651090FC2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS-RefreshControl/Info.plist";
@@ -422,6 +483,7 @@
 				AC10BAF21B7BFF8700C4A248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC10BAF31B7BFF8700C4A248 /* Build configuration list for PBXNativeTarget "iOS-RefreshControlTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +492,7 @@
 				AC10BAF51B7BFF8700C4A248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -10,10 +10,11 @@
 
 #define NUMBER_OF_SECTION_DEFAULT 1
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray *items;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @end
 
@@ -21,7 +22,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    ///_items = [[NSArray alloc]initWithObjects:@"0",@"1",@"2",nil];
+    _items = [[NSArray alloc]initWithObjects:@"0",@"1",@"2",@"3",nil];
+    _refreshControl = [[UIRefreshControl alloc]init];
+    _refreshControl.backgroundColor = [UIColor purpleColor];
+    _refreshControl.tintColor = [UIColor whiteColor];
+    [_refreshControl addTarget:self action:@selector(fetchLastestItems) forControlEvents:UIControlEventValueChanged];
+    
+    [_tableView addSubview:_refreshControl];
+    [_tableView sendSubviewToBack:_refreshControl];
+    
+}
+
+-(void)fetchLastestItems{
+    [self.tableView reloadData];
+    
+    if (_refreshControl) {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+        [formatter setDateFormat:@"MMM d, h:mm a"];
+        NSString *title = [NSString stringWithFormat:@"Last update: %@", [formatter stringFromDate:[NSDate date]]];
+        NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
+        NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title attributes:attrsDictionary];
+        [_refreshControl setAttributedTitle:attributedTitle];
+        [_refreshControl endRefreshing];
+    }
 }
 
 /// http://stackoverflow.com/questions/10389476/hiding-keyboard-ios

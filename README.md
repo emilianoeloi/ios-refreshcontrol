@@ -9,3 +9,7 @@ iOS Programming 101: Implementing Pull-to-Refresh and Handling Empty Table: http
 About Windows and Views: https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503
 
 hiding keyboard ios [duplicate]: http://stackoverflow.com/questions/10389476/hiding-keyboard-ios
+
+Better Code: Implement Pull to Refresh in your iOS Apps: http://www.techrepublic.com/blog/software-engineer/better-code-implement-pull-to-refresh-in-your-ios-apps/
+
+BBC Platform API: https://developer.bbc.co.uk/content/bbc-platform-api
