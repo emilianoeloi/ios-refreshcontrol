@@ -13,3 +13,5 @@ hiding keyboard ios [duplicate]: http://stackoverflow.com/questions/10389476/hid
 Better Code: Implement Pull to Refresh in your iOS Apps: http://www.techrepublic.com/blog/software-engineer/better-code-implement-pull-to-refresh-in-your-ios-apps/
 
 BBC Platform API: https://developer.bbc.co.uk/content/bbc-platform-api
+
+HTTP Request Operation Manager: https://github.com/AFNetworking/AFNetworking
