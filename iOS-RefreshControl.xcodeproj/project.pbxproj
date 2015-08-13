@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC10BAD01B7BFF8700C4A248 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC10BACF1B7BFF8700C4A248 /* main.m */; };
+		AC10BAD31B7BFF8700C4A248 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC10BAD21B7BFF8700C4A248 /* AppDelegate.m */; };
+		AC10BAD61B7BFF8700C4A248 /* iOS_RefreshControl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC10BAD41B7BFF8700C4A248 /* iOS_RefreshControl.xcdatamodeld */; };
+		AC10BAD91B7BFF8700C4A248 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC10BAD81B7BFF8700C4A248 /* ViewController.m */; };
+		AC10BADC1B7BFF8700C4A248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC10BADA1B7BFF8700C4A248 /* Main.storyboard */; };
+		AC10BADE1B7BFF8700C4A248 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC10BADD1B7BFF8700C4A248 /* Images.xcassets */; };
+		AC10BAE11B7BFF8700C4A248 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC10BADF1B7BFF8700C4A248 /* LaunchScreen.xib */; };
+		AC10BAED1B7BFF8700C4A248 /* iOS_RefreshControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC10BAEC1B7BFF8700C4A248 /* iOS_RefreshControlTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC10BAE71B7BFF8700C4A248 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC10BAC21B7BFF8700C4A248 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC10BAC91B7BFF8700C4A248;
+			remoteInfo = "iOS-RefreshControl";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC10BACA1B7BFF8700C4A248 /* iOS-RefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-RefreshControl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC10BACE1B7BFF8700C4A248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC10BACF1B7BFF8700C4A248 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC10BAD11B7BFF8700C4A248 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC10BAD21B7BFF8700C4A248 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC10BAD51B7BFF8700C4A248 /* iOS_RefreshControl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_RefreshControl.xcdatamodel; sourceTree = "<group>"; };
+		AC10BAD71B7BFF8700C4A248 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AC10BAD81B7BFF8700C4A248 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AC10BADB1B7BFF8700C4A248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC10BADD1B7BFF8700C4A248 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AC10BAE01B7BFF8700C4A248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AC10BAE61B7BFF8700C4A248 /* iOS-RefreshControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-RefreshControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC10BAEB1B7BFF8700C4A248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC10BAEC1B7BFF8700C4A248 /* iOS_RefreshControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_RefreshControlTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC10BAC71B7BFF8700C4A248 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC10BAE31B7BFF8700C4A248 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC10BAC11B7BFF8700C4A248 = {
+			isa = PBXGroup;
+			children = (
+				AC10BACC1B7BFF8700C4A248 /* iOS-RefreshControl */,
+				AC10BAE91B7BFF8700C4A248 /* iOS-RefreshControlTests */,
+				AC10BACB1B7BFF8700C4A248 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC10BACB1B7BFF8700C4A248 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC10BACA1B7BFF8700C4A248 /* iOS-RefreshControl.app */,
+				AC10BAE61B7BFF8700C4A248 /* iOS-RefreshControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC10BACC1B7BFF8700C4A248 /* iOS-RefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				AC10BAD11B7BFF8700C4A248 /* AppDelegate.h */,
+				AC10BAD21B7BFF8700C4A248 /* AppDelegate.m */,
+				AC10BAD71B7BFF8700C4A248 /* ViewController.h */,
+				AC10BAD81B7BFF8700C4A248 /* ViewController.m */,
+				AC10BADA1B7BFF8700C4A248 /* Main.storyboard */,
+				AC10BADD1B7BFF8700C4A248 /* Images.xcassets */,
+				AC10BADF1B7BFF8700C4A248 /* LaunchScreen.xib */,
+				AC10BAD41B7BFF8700C4A248 /* iOS_RefreshControl.xcdatamodeld */,
+				AC10BACD1B7BFF8700C4A248 /* Supporting Files */,
+			);
+			path = "iOS-RefreshControl";
+			sourceTree = "<group>";
+		};
+		AC10BACD1B7BFF8700C4A248 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC10BACE1B7BFF8700C4A248 /* Info.plist */,
+				AC10BACF1B7BFF8700C4A248 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC10BAE91B7BFF8700C4A248 /* iOS-RefreshControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC10BAEC1B7BFF8700C4A248 /* iOS_RefreshControlTests.m */,
+				AC10BAEA1B7BFF8700C4A248 /* Supporting Files */,
+			);
+			path = "iOS-RefreshControlTests";
+			sourceTree = "<group>";
+		};
+		AC10BAEA1B7BFF8700C4A248 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC10BAEB1B7BFF8700C4A248 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC10BAC91B7BFF8700C4A248 /* iOS-RefreshControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC10BAF01B7BFF8700C4A248 /* Build configuration list for PBXNativeTarget "iOS-RefreshControl" */;
+			buildPhases = (
+				AC10BAC61B7BFF8700C4A248 /* Sources */,
+				AC10BAC71B7BFF8700C4A248 /* Frameworks */,
+				AC10BAC81B7BFF8700C4A248 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-RefreshControl";
+			productName = "iOS-RefreshControl";
+			productReference = AC10BACA1B7BFF8700C4A248 /* iOS-RefreshControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC10BAE51B7BFF8700C4A248 /* iOS-RefreshControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC10BAF31B7BFF8700C4A248 /* Build configuration list for PBXNativeTarget "iOS-RefreshControlTests" */;
+			buildPhases = (
+				AC10BAE21B7BFF8700C4A248 /* Sources */,
+				AC10BAE31B7BFF8700C4A248 /* Frameworks */,
+				AC10BAE41B7BFF8700C4A248 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC10BAE81B7BFF8700C4A248 /* PBXTargetDependency */,
+			);
+			name = "iOS-RefreshControlTests";
+			productName = "iOS-RefreshControlTests";
+			productReference = AC10BAE61B7BFF8700C4A248 /* iOS-RefreshControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC10BAC21B7BFF8700C4A248 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Bocamuchas;
+				TargetAttributes = {
+					AC10BAC91B7BFF8700C4A248 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					AC10BAE51B7BFF8700C4A248 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = AC10BAC91B7BFF8700C4A248;
+					};
+				};
+			};
+			buildConfigurationList = AC10BAC51B7BFF8700C4A248 /* Build configuration list for PBXProject "iOS-RefreshControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC10BAC11B7BFF8700C4A248;
+			productRefGroup = AC10BACB1B7BFF8700C4A248 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC10BAC91B7BFF8700C4A248 /* iOS-RefreshControl */,
+				AC10BAE51B7BFF8700C4A248 /* iOS-RefreshControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC10BAC81B7BFF8700C4A248 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC10BADC1B7BFF8700C4A248 /* Main.storyboard in Resources */,
+				AC10BAE11B7BFF8700C4A248 /* LaunchScreen.xib in Resources */,
+				AC10BADE1B7BFF8700C4A248 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC10BAE41B7BFF8700C4A248 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC10BAC61B7BFF8700C4A248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC10BAD31B7BFF8700C4A248 /* AppDelegate.m in Sources */,
+				AC10BAD61B7BFF8700C4A248 /* iOS_RefreshControl.xcdatamodeld in Sources */,
+				AC10BAD91B7BFF8700C4A248 /* ViewController.m in Sources */,
+				AC10BAD01B7BFF8700C4A248 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC10BAE21B7BFF8700C4A248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC10BAED1B7BFF8700C4A248 /* iOS_RefreshControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC10BAE81B7BFF8700C4A248 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC10BAC91B7BFF8700C4A248 /* iOS-RefreshControl */;
+			targetProxy = AC10BAE71B7BFF8700C4A248 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC10BADA1B7BFF8700C4A248 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC10BADB1B7BFF8700C4A248 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC10BADF1B7BFF8700C4A248 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC10BAE01B7BFF8700C4A248 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC10BAEE1B7BFF8700C4A248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC10BAEF1B7BFF8700C4A248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC10BAF11B7BFF8700C4A248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "iOS-RefreshControl/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC10BAF21B7BFF8700C4A248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "iOS-RefreshControl/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC10BAF41B7BFF8700C4A248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS-RefreshControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-RefreshControl.app/iOS-RefreshControl";
+			};
+			name = Debug;
+		};
+		AC10BAF51B7BFF8700C4A248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS-RefreshControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-RefreshControl.app/iOS-RefreshControl";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC10BAC51B7BFF8700C4A248 /* Build configuration list for PBXProject "iOS-RefreshControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC10BAEE1B7BFF8700C4A248 /* Debug */,
+				AC10BAEF1B7BFF8700C4A248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC10BAF01B7BFF8700C4A248 /* Build configuration list for PBXNativeTarget "iOS-RefreshControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC10BAF11B7BFF8700C4A248 /* Debug */,
+				AC10BAF21B7BFF8700C4A248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC10BAF31B7BFF8700C4A248 /* Build configuration list for PBXNativeTarget "iOS-RefreshControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC10BAF41B7BFF8700C4A248 /* Debug */,
+				AC10BAF51B7BFF8700C4A248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC10BAD41B7BFF8700C4A248 /* iOS_RefreshControl.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC10BAD51B7BFF8700C4A248 /* iOS_RefreshControl.xcdatamodel */,
+			);
+			currentVersion = AC10BAD51B7BFF8700C4A248 /* iOS_RefreshControl.xcdatamodel */;
+			path = iOS_RefreshControl.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC10BAC21B7BFF8700C4A248 /* Project object */;
+}
