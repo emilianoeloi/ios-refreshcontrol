@@ -31,7 +31,8 @@
     _refreshControl.backgroundColor = [UIColor clearColor];
     _refreshControl.tintColor = [UIColor clearColor];
 //    NSArray *customRefreshContentViews = [CustomRefreshContent alloc]initWi
-    _customRefreshContent = [[CustomRefreshContent alloc]initWithFrame:_refreshControl.bounds refreshingCheck:^BOOL{
+    CGRect refreshControl = CGRectMake(0, 0, self.view.bounds.size.width, _refreshControl.bounds.size.height);
+    _customRefreshContent = [[CustomRefreshContent alloc]initWithFrame:refreshControl refreshingCheck:^BOOL{
         return self.refreshControl.isRefreshing;
     }];
 //    _customRefreshContent.frame = _refreshControl.bounds;
@@ -67,7 +68,7 @@
 
 -(void)fetchLastestItems{
     [self loadItems];
-    [_customRefreshContent loadingAnimation];
+    [_customRefreshContent start];
 }
 
 /// http://stackoverflow.com/questions/10389476/hiding-keyboard-ios

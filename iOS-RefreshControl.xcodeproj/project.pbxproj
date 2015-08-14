@@ -146,9 +146,9 @@
 		AC5A39451B7D1167000D8EF2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC5A39491B7D1345000D8EF2 /* CustomRefreshContent.xib */,
 				AC5A39461B7D1320000D8EF2 /* CustomRefreshContent.h */,
 				AC5A39471B7D1320000D8EF2 /* CustomRefreshContent.m */,
-				AC5A39491B7D1345000D8EF2 /* CustomRefreshContent.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";

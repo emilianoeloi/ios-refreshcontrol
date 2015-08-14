@@ -19,3 +19,5 @@ HTTP Request Operation Manager: https://github.com/AFNetworking/AFNetworking
 Building a Custom Pull To Refresh Control for Your iOS Apps: http://www.appcoda.com/custom-pull-to-refresh/
 
 iOS Custom Pull-to-Refresh Control Tutorial : http://www.jackrabbitmobile.com/design/ios-custom-pull-to-refresh-control/
+
+iOS - Animation of many different views: http://stackoverflow.com/questions/22191445/ios-animation-of-many-different-views

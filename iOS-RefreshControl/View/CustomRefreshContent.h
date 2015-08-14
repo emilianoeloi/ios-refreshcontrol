@@ -8,16 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-#define CORNER_RADIUS_DEFAULT 10.0f
-#define ANIMATION_DURATION 0.3f
+#define CORNER_RADIUS_DEFAULT 5.0f
+#define ANIMATION_DURATION 1.2f
 #define STEP_DEFAULT 1.0f
 #define REFRESH_DELAY 3.0f
 
 typedef BOOL (^LoadingAnimationBlock)();
+typedef void (^KeyframeAnimationBlock)();
 
 @interface CustomRefreshContent : UIView
 -(instancetype) initWithFrame:(CGRect)frame refreshingCheck:(LoadingAnimationBlock)refreshingCheck;
 -(void) loadingAnimation;
 -(void) pullAnimation:(CGFloat)percent;
+-(void)start;
 
 @end
