@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <AFNetworking/AFHTTPRequestOperationManager.h>
+#import "CustomRefreshContent.h"
 
 #define NUMBER_OF_SECTION_DEFAULT 1
 #define API_BASE_URL @"http://service.fxos.com.br/podcasts"
@@ -18,6 +19,7 @@
 @property (nonatomic, strong) NSArray *items;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
+@property (nonatomic, strong) CustomRefreshContent *customRefreshContent;
 
 @end
 
@@ -26,8 +28,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _refreshControl = [[UIRefreshControl alloc]init];
-    _refreshControl.backgroundColor = [UIColor purpleColor];
-    _refreshControl.tintColor = [UIColor whiteColor];
+    _refreshControl.backgroundColor = [UIColor clearColor];
+    _refreshControl.tintColor = [UIColor clearColor];
+//    NSArray *customRefreshContentViews = [CustomRefreshContent alloc]initWi
+    _customRefreshContent = [[CustomRefreshContent alloc]initWithFrame:_refreshControl.bounds refreshingCheck:^BOOL{
+        return self.refreshControl.isRefreshing;
+    }];
+//    _customRefreshContent.frame = _refreshControl.bounds;
+    [_refreshControl addSubview:_customRefreshContent];
     [_refreshControl addTarget:self action:@selector(fetchLastestItems) forControlEvents:UIControlEventValueChanged];
     
     [_tableView addSubview:_refreshControl];
@@ -45,7 +53,13 @@
     [manager GET:API_BASE_URL parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         self.items = responseObject;
         [self.tableView reloadData];
-        [_refreshControl endRefreshing];
+        double delayInSeconds = REFRESH_DELAY;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            [_refreshControl endRefreshing];
+        });
+
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
     }];
@@ -53,16 +67,7 @@
 
 -(void)fetchLastestItems{
     [self loadItems];
-    
-    /*if (_refreshControl) {
-        NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-        [formatter setDateFormat:@"MMM d, h:mm a"];
-        NSString *title = [NSString stringWithFormat:@"Last update: %@", [formatter stringFromDate:[NSDate date]]];
-        NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
-        NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title attributes:attrsDictionary];
-        [_refreshControl setAttributedTitle:attributedTitle];
-        
-    }*/
+    [_customRefreshContent loadingAnimation];
 }
 
 /// http://stackoverflow.com/questions/10389476/hiding-keyboard-ios
@@ -119,5 +124,17 @@
     
 }
 
+
+/// ScrollView Delegate
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    
+}
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGRect refreshBounds = self.refreshControl.bounds;
+    CGFloat pullDistance = MAX(0.0, -_refreshControl.frame.origin.y);
+    CGFloat pullRatio = MIN( MAX(pullDistance, 0.0), 100) / 100;
+    [_customRefreshContent pullAnimation:pullRatio];
+    NSLog(@"===> %.02f [%.02f] [%i]", pullDistance, pullRatio, _refreshControl.isRefreshing);
+}
 
 @end

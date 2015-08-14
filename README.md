@@ -15,3 +15,7 @@ Better Code: Implement Pull to Refresh in your iOS Apps: http://www.techrepublic
 BBC Platform API: https://developer.bbc.co.uk/content/bbc-platform-api
 
 HTTP Request Operation Manager: https://github.com/AFNetworking/AFNetworking
+
+Building a Custom Pull To Refresh Control for Your iOS Apps: http://www.appcoda.com/custom-pull-to-refresh/
+
+iOS Custom Pull-to-Refresh Control Tutorial : http://www.jackrabbitmobile.com/design/ios-custom-pull-to-refresh-control/

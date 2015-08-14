@@ -15,6 +15,8 @@
 		AC10BADE1B7BFF8700C4A248 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC10BADD1B7BFF8700C4A248 /* Images.xcassets */; };
 		AC10BAE11B7BFF8700C4A248 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC10BADF1B7BFF8700C4A248 /* LaunchScreen.xib */; };
 		AC10BAED1B7BFF8700C4A248 /* iOS_RefreshControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC10BAEC1B7BFF8700C4A248 /* iOS_RefreshControlTests.m */; };
+		AC5A39481B7D1320000D8EF2 /* CustomRefreshContent.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A39471B7D1320000D8EF2 /* CustomRefreshContent.m */; };
+		AC5A394A1B7D1345000D8EF2 /* CustomRefreshContent.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5A39491B7D1345000D8EF2 /* CustomRefreshContent.xib */; };
 		F76706EF09F38A2B6A8F9D78 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0B16928EDFD45D3BD79DE5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,9 @@
 		AC10BAE61B7BFF8700C4A248 /* iOS-RefreshControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-RefreshControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC10BAEB1B7BFF8700C4A248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC10BAEC1B7BFF8700C4A248 /* iOS_RefreshControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_RefreshControlTests.m; sourceTree = "<group>"; };
+		AC5A39461B7D1320000D8EF2 /* CustomRefreshContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomRefreshContent.h; path = View/CustomRefreshContent.h; sourceTree = "<group>"; };
+		AC5A39471B7D1320000D8EF2 /* CustomRefreshContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomRefreshContent.m; path = View/CustomRefreshContent.m; sourceTree = "<group>"; };
+		AC5A39491B7D1345000D8EF2 /* CustomRefreshContent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomRefreshContent.xib; path = View/CustomRefreshContent.xib; sourceTree = "<group>"; };
 		E066F3A343811B9B90D4170A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FD0B16928EDFD45D3BD79DE5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +103,7 @@
 		AC10BACC1B7BFF8700C4A248 /* iOS-RefreshControl */ = {
 			isa = PBXGroup;
 			children = (
+				AC5A39451B7D1167000D8EF2 /* View */,
 				AC10BAD11B7BFF8700C4A248 /* AppDelegate.h */,
 				AC10BAD21B7BFF8700C4A248 /* AppDelegate.m */,
 				AC10BAD71B7BFF8700C4A248 /* ViewController.h */,
@@ -135,6 +141,16 @@
 				AC10BAEB1B7BFF8700C4A248 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC5A39451B7D1167000D8EF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A39461B7D1320000D8EF2 /* CustomRefreshContent.h */,
+				AC5A39471B7D1320000D8EF2 /* CustomRefreshContent.m */,
+				AC5A39491B7D1345000D8EF2 /* CustomRefreshContent.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		AD2BECD58F2B0047345AA121 /* Pods */ = {
@@ -230,6 +246,7 @@
 			files = (
 				AC10BADC1B7BFF8700C4A248 /* Main.storyboard in Resources */,
 				AC10BAE11B7BFF8700C4A248 /* LaunchScreen.xib in Resources */,
+				AC5A394A1B7D1345000D8EF2 /* CustomRefreshContent.xib in Resources */,
 				AC10BADE1B7BFF8700C4A248 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +300,7 @@
 			files = (
 				AC10BAD31B7BFF8700C4A248 /* AppDelegate.m in Sources */,
 				AC10BAD61B7BFF8700C4A248 /* iOS_RefreshControl.xcdatamodeld in Sources */,
+				AC5A39481B7D1320000D8EF2 /* CustomRefreshContent.m in Sources */,
 				AC10BAD91B7BFF8700C4A248 /* ViewController.m in Sources */,
 				AC10BAD01B7BFF8700C4A248 /* main.m in Sources */,
 			);
