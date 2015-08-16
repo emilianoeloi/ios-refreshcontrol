@@ -90,10 +90,10 @@
 
 -(void)resetAnimation{
     
-    [_viewOne setTransform:CGAffineTransformMakeScale(1.0, 1.0)];
+    [_viewOne setTransform:CGAffineTransformMakeScale(0.25, 0.25)];
     [_viewTwo setTransform:CGAffineTransformMakeScale(0.5, 0.5)];
-    [_viewThree setTransform:CGAffineTransformMakeScale(0.0, 0.0)];
-    [_viewFour setTransform:CGAffineTransformMakeScale(0.5, 0.5)];
+    [_viewThree setTransform:CGAffineTransformMakeScale(0.75, 0.75)];
+    [_viewFour setTransform:CGAffineTransformMakeScale(0.1, 1.0)];
     
 #warning DEBIT: Conflito entre as animações de resetar os blocos e o scroll do tableview voltando
     double delayInSeconds = 0.5;
@@ -148,7 +148,7 @@
             [_viewThree setTransform:CGAffineTransformMakeScale(0.0, 0.0)];
         }];
         
-        /// Two
+        /// Four
         [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.25 animations:^{
             [_viewFour setTransform:CGAffineTransformMakeScale(1.0, 1.0)];
         }];
@@ -163,17 +163,28 @@
     
 }
 
+-(CGFloat)scaleWithStartScale:(CGFloat)startScale scrollPercent:(CGFloat)scrollPercent max:(CGFloat)max {
+    CGFloat scale = 1.0 * scrollPercent / max;
+    CGFloat newScale = startScale * scale / 1.0;
+    newScale = (newScale > startScale) ? startScale : newScale;
+    return newScale;
+}
+
 -(void)pullAnimation:(CGFloat)percent{
     
     if (!_isRefreshAnimating && percent <= 1) {
        
 #warning TODO: Fazer animação do pull indo do zero até a posição inicial do refresh animation
         
-        _viewOne.transform = CGAffineTransformMakeScale(percent, percent);
-        _viewTwo.transform = CGAffineTransformMakeScale(percent, percent);
-        _viewThree.transform = CGAffineTransformMakeScale(percent, percent);
-        _viewFour.transform = CGAffineTransformMakeScale(percent, percent);
-        _scale = _scaleOne = _scaleTwo = _scaleThree = _scaleFour = percent;
+        _scaleOne = [self scaleWithStartScale:0.25 scrollPercent:percent max:0.25];
+        _scaleTwo = [self scaleWithStartScale:0.50 scrollPercent:percent max:0.50];
+        _scaleThree = [self scaleWithStartScale:0.75 scrollPercent:percent max:0.75];
+        _scaleFour = [self scaleWithStartScale:1.0 scrollPercent:percent max:1.00];
+        
+        _viewOne.transform = CGAffineTransformMakeScale(_scaleOne, _scaleOne);
+        _viewTwo.transform = CGAffineTransformMakeScale(_scaleTwo, _scaleTwo);
+        _viewThree.transform = CGAffineTransformMakeScale(_scaleThree, _scaleThree);
+        _viewFour.transform = CGAffineTransformMakeScale(_scaleFour, _scaleFour);
         NSLog(@"%.02f", percent);
     }
     
